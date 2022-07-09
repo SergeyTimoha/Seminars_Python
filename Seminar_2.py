@@ -3,16 +3,26 @@
 # - 1, 4, 8, 7, 5 -> 8
 # - 78, 55, 36, 90, 2 -> 90
 
-ls = list(input('Введите массив - '))
+numbers = []
+for i in range(5):
+    number = int(input('Введите число:'))
+    numbers.append(number)
 
-def max(a):
-    maxnum = a[0]
-    for i in a:
-        if(maxnum<i):
-            maxnum = i
-    return maxnum
+print(f'max = {max(numbers)}')
 
-print(f'Результ - {max(ls)}')
+
+
+
+# ls = list(input('Введите массив - '))
+
+# def max(a):
+#     maxnum = a[0]
+#     for i in a:
+#         if(maxnum<i):
+#             maxnum = i
+#     return maxnum
+
+# print(f'Результ - {max(ls)}')
 
 
 # def get_max(a,b,c,d,e):
